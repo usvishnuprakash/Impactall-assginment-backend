@@ -9,7 +9,7 @@ module.exports = {
       type: "string",
 
       trim: true,
-      min: 8,
+      min: 6,
     },
     licenseStartDate: {
       type: "date",
@@ -30,7 +30,7 @@ module.exports = {
       type: "string",
 
       trim: true,
-      min: 8,
+      min: 6,
     },
   },
 };

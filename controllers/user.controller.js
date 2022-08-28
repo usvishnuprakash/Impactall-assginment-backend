@@ -50,6 +50,7 @@ module.exports = {
           data: req.body,
           message: "Username not found please try with valid username",
         });
+        return;
       }
       if ((await bcrypt.compare(req.body.password, exist.password)) === false) {
         res.status(400).json({
@@ -78,6 +79,8 @@ module.exports = {
         data: {
           accessToken: authToken,
           userName: exist.userName,
+          licenseStartDate: exist.licenseStartDate,
+          licenseEndDate: exist.licenseEndDate,
         },
       });
       return;
