@@ -7,7 +7,6 @@ For interview purpose
 1. npm i
 2. npm run start
 3. make sure port is 4001
-4. need to install nodemon
 
 # FOR API TESTING USE BELOW POSTMAN LINK
 
